@@ -242,7 +242,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_subtitle">simply amazing places</div>
-					<div class="section_title"><h2>Popular Destinations</h2></div>
+					<div class="section_title"><h2>Popular Destinations of Pakistan</h2></div>
 				</div>
 			</div>
 			<div class="row destinations_row">
@@ -253,7 +253,7 @@
 						{% for dests in Dests %}
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{{baseurl}}/{{dests.img}}" alt="">
+								<img src="{{dests.img.url}}" alt="">
 								{% if dests.offer %}
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 								{% endif %}
